@@ -1,0 +1,182 @@
+            
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'MyFont2', sans-serif;
+                background-color: #FFEEBC;
+            }
+            h1 {
+                font-family: 'MyFont', sans-serif;
+                font-size: 6em;
+                color: #26422A;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #FFEEBC;
+                opacity: 0.8;
+                padding: 10px;
+            }
+            .menu-icon {
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+                color: #5D372B;
+            }
+            .nav-links li a {
+                text-decoration: none;
+                font-weight: bold;
+                color: #5D372B;
+            }
+            .header {
+                display: flex;
+                align-items: center; /* Damit der Text und das Bild vertikal zentriert sind */
+                justify-content: space-between; /* Damit Text und Bild nebeneinander stehen */
+                background: linear-gradient(90deg, #D2E8FF 0%, #FFEEBC 100%);
+                background-size: 200% 200%; /* Größerer Gradient für die Bewegung */
+                animation: gradient-animation 5s infinite linear; /* Animationseffekt */
+                color: #26422A;
+                text-align: left;
+                padding: 50px;
+                gap: 20px; /* Abstand zwischen Text und Bild */
+            }
+            
+            .header-content {
+                flex: 1; /* Der Text nimmt den verfügbaren Platz ein */
+                display: flex;
+                flex-direction: column; /* Text bleibt untereinander */
+                gap: 15px;
+            }
+            
+            .headshot {
+                width: auto; /* Oder gewünschte Größe */
+                height: 400px;
+                border-radius: 25%;
+            }
+
+
+            
+            .portfolio {
+                background-color: #2f422d;
+                color: #cfe2f3;
+                text-align: center;
+                padding: 50px;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .carousel-container {
+                overflow: hidden;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                align-items: center;
+            }
+            .carousel {
+                display: flex;
+                overflow-x: scroll;
+                scroll-behavior: smooth;
+                gap: 10px;
+            }
+            .carousel img {
+                height: 200px;
+                width: auto;
+            }
+            .prev, .next {
+                position: absolute;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 18px;
+            }
+            .prev {
+                left: 5px;
+            }
+            .next {
+                right: 5px;
+            }
+            .prev :hover, .next :hover {
+                background: rgba(0, 0, 0, 0.8);
+            }
+
+
+            .socialLinks {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                align-items: center;   
+                flex-direction: row;    
+                height: 200px;
+                background-color: #FFEEBC;
+                color: #26422A;
+            }
+            .socialLinks a {
+                color: #26422A;
+                font-size: 24px;
+                text-decoration: none;
+            }
+            .socialLinks a img {
+                height: 50px;
+                width: auto;
+            }
+            .skills {
+                padding: 50px;
+                background-color: #e76f39;
+                color: #5D372B;
+                gap: 20px;          
+                justify-items: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column; /* Add this line to stack items vertically */
+            }
+            .skills-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                }
+                button {
+                    padding: 10px 20px;
+                    background-color: #5D372B;
+                    color: #e76f39;
+                    border: none;
+                    cursor: pointer;
+                    width: fit-content;
+                    height: fit-content;
+                    border-radius: 20px;
+                    font-weight: bold;
+                }
+                button:hover {
+                    color: #5D372B;
+                    border: #5D372B solid 1px;
+                    background-color: #e76f39;
+                    opacity: 0.8;
+                }
+            .skillsPlaceholder {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #FFEEBC;
+            }

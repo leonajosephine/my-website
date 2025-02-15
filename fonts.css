@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('assets/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: regular;
+    font-style: normal;  
+}       
+@font-face {
+    font-family: 'MyFont2';  
+    src: url('assets/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: thin;
+    font-style: normal;
+}
+h1 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 6em;
+    color: #26422A;
+}
+h2 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 3em;
+    color: #26422A;
+}
+h3 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 2em;
+    color: #26422A;
+}   
+h4 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 1.5em;
+    color: #26422A;
+}
+h5 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 1.17em;
+    color: #26422A;
+}
+h6 {
+    font-family: 'MyFont', sans-serif;
+    font-size: 1em;
+    color: #26422A;
+}
+p {
+    font-family: 'MyFont2', sans-serif;
+    font-size: 1em;
+    color: #26422A;
+}
