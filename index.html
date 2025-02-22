@@ -9,8 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="menu-icon">&#9776;</div>
-        <ul class="navLinks">
+        <ul class="nav-links">
             <li><a href="index.html">About Me</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="skills.html">Skills</a></li>
@@ -20,7 +19,7 @@
 
     <header class="header">
         <div class="header-content">
-            <h1 class="headerItem">Leona <em>Josephine</em> Redmann</h1>
+            <h1 class="headerItem">LEONA <em>JOSEPHINE</em> REDMANN</h1>
             <h2 class="headerItem">Welcome to my own little space & get to know me</h2>
             <p class="headerItem">
                 My name is Leona Redmann I love my booooyyyfwwwrrriiiieeeennddddddd. 
@@ -28,12 +27,14 @@
                 Animation einbauen??
             </p>
         </div>
-        <img src="Images/IMG_2307.jpeg" alt="Professional photo of a woman" class="headshot">
     </header>
 
     <section id="portfolio" class="portfolio">
-        <h2>My Projects</h2>
-        <p>Here are some of my projects: gallery zum durchklicken </p>
+        <h2>My Portfolio</h2>
+        <div class="undertitle">
+            <img src="Images/Line 1.png" alt="fine line decoration">
+            <p>Have a Look into some of my projects - whether it's UI/UX Design, App or website development.</p>
+        </div>
         <div class="carousel-container">
             <div class="carousel">
                 <img src="Images/emily-bernal-v9vII5gV8Lw-unsplash.jpg" alt="placeholder">
@@ -50,31 +51,63 @@
         
     </section>
 
-    <section class="socialLinks">
-        <a href=""><img src="Images/icons8-linkedin-100.png" alt="LinkedIn Icon"> LinkedIn</a>
-        <a href=""><img src="Images/icons8-github-100-2.png" alt="GitHub Icon"> GitHub</a>
-        <a href=""><img src="Images/icons8-pinterest-100.png" alt="Pinterest Icon"> Pinterest</a>
-        <a href=""><img src="Images/icons8-instagram-48.png" alt="Insta Icon"> Instagram</a>
-    </section>
-
     <section class="skills">
         <h2 class="skills-item1">My Skills</h2>
-        <p class="skills-item2">click here to see more</p>
+        <img src="Images/Line 2.png" alt="fine line decoration">
+        <p class="skills-item2">Here is an overview of my skills. Click the button to see my education, all technichal skills as well as my soft skills.</p>
         <div class="skills-buttons">
-            <button onclick="showTechnicalSkills()">Technical skills</button>
-            <button onclick="showTechnicalSkills()">Soft skills</button>
+            <button class='skill-button' onclick="showTechnicalSkills()">Technical skills</button>
+            <button class='skill-button' onclick="showTechnicalSkills()">Soft skills</button>
         </div>
         <p class="skillsPlaceholder"></p>
     </section>
 
+    <section class="socialLinks">
+        <h2>MY SOCIALS</h2>
+        <div class="undertitle2">
+            <img src="Images/Line 1.png" alt="fine line decoration">
+            <p>IF YOU WANNA CHECK OUT MY LINKED FOR FURTHER INFORMATION, MY PINTEREST FOR SOME INSPOS OR MY GITHUB TO SEE WHAT I HAVE BEEN UP TO IN THE CODING WORLD - YOU ARE MORE THAN WELCOME</p>
+        </div>
+        <div class="social-links-detail">
+            <a href=""><img src="Images/icons8-linkedin-100.png" alt="LinkedIn Icon"> LinkedIn</a>
+            <a href=""><img src="Images/icons8-github-100-2.png" alt="GitHub Icon"> GitHub</a>
+            <a href=""><img src="Images/icons8-pinterest-100.png" alt="Pinterest Icon"> Pinterest</a>
+            <a href=""><img src="Images/icons8-instagram-48.png" alt="Insta Icon"> Instagram</a>
+        </div>
+    </section>
 
-    <h2>Contact me</h2>
+    <section class="contact">
+        <h2>Contact me</h2>
+        <div class="undertitle3">
+            <p>Feel free to contact me if you have any questions or if you want to work together on a project. I am looking forward to hearing from you.</p>
+            <img src="Images/Line 1.png" alt="fine line decoration">
+        </div>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+    </section>
 
     <footer>
-        <ul>
-            <li>Impressum</li>
-            <li>Personal</li>
-        </ul>
+        <h3>Leona J.R.</h3>
+        <div class="footer-links">
+            <span>About</span>
+            <img src="Images/Line 3.png" alt="fine line decoration"></li>
+            <span>Test</span>
+            <img src="Images/Line 3.png" alt="fine line decoration">
+            <span>Test</span>
+            <img src="Images/Line 3.png" alt="fine line decoration">
+            <span>Impressum</span>
+        </div>
+        <div class="footer-mini-socials">Placeholder mini social links</div>
+        <div class="footer-end">
+            <p id="mail">leona.redmann@gmx.net</p>
+            <p>Design by me</p>
+        </div>
     </footer>
 
     <script src="skript.js"></script>

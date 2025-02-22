@@ -1,29 +1,42 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('assets/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-    font-weight: regular;
+    src: url('assets/soria/soria-font.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;  
 }       
 @font-face {
     font-family: 'MyFont2';  
-    src: url('assets/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: thin;
+    src: url('assets/Julius_Sans_One/JuliusSansOne-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 h1 {
+    color: #000;
     font-family: 'MyFont', sans-serif;
-    font-size: 6em;
-    color: #26422A;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 h2 {
-    font-family: 'MyFont', sans-serif;
-    font-size: 3em;
-    color: #26422A;
+    font-family: 'MyFont2', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 h3 {
-    font-family: 'MyFont', sans-serif;
+    font-family: 'MyFont2', sans-serif;
     font-size: 2em;
-    color: #26422A;
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }   
 h4 {
     font-family: 'MyFont', sans-serif;
@@ -43,5 +56,4 @@ h6 {
 p {
     font-family: 'MyFont2', sans-serif;
     font-size: 1em;
-    color: #26422A;
 }
